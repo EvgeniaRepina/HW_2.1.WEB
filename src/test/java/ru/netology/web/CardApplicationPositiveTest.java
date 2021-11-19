@@ -15,7 +15,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class CardApplicationTest {
+class CardApplicationPositiveTest {
     private WebDriver driver;
 
     @BeforeAll
@@ -48,7 +48,7 @@ class CardApplicationTest {
 
 
     @Test
-    void shouldTestV2() throws InterruptedException {
+    void shouldTest() throws InterruptedException {
         driver.get("http://localhost:9999");
 
         driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Василий");
